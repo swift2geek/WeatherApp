@@ -16,6 +16,8 @@
 		D23CD8611E80F6E6001A5449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23CD85F1E80F6E6001A5449 /* LaunchScreen.storyboard */; };
 		D23CD86C1E80F6E6001A5449 /* superweatherappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23CD86B1E80F6E6001A5449 /* superweatherappTests.swift */; };
 		D23CD8771E80F6E6001A5449 /* superweatherappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23CD8761E80F6E6001A5449 /* superweatherappUITests.swift */; };
+		D23CD8851E81434B001A5449 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23CD8841E81434B001A5449 /* Constants.swift */; };
+		D23CD8871E814CD2001A5449 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23CD8861E814CD2001A5449 /* CurrentWeather.swift */; };
 		E95CC4A2B35A588309A05609 /* Pods_superweatherapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A71C16FB8AD2CDAFD76260 /* Pods_superweatherapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		D23CD8721E80F6E6001A5449 /* superweatherappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = superweatherappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23CD8761E80F6E6001A5449 /* superweatherappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = superweatherappUITests.swift; sourceTree = "<group>"; };
 		D23CD8781E80F6E6001A5449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23CD8841E81434B001A5449 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D23CD8861E814CD2001A5449 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		D3DBA0CBE13032D7EF4A36CD /* Pods-superweatherappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-superweatherappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-superweatherappUITests/Pods-superweatherappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D989443FCBAB2EA0E9C43EED /* Pods-superweatherappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-superweatherappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-superweatherappUITests/Pods-superweatherappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +147,8 @@
 				D23CD85D1E80F6E6001A5449 /* Assets.xcassets */,
 				D23CD85F1E80F6E6001A5449 /* LaunchScreen.storyboard */,
 				D23CD8621E80F6E6001A5449 /* Info.plist */,
+				D23CD8841E81434B001A5449 /* Constants.swift */,
+				D23CD8861E814CD2001A5449 /* CurrentWeather.swift */,
 			);
 			path = superweatherapp;
 			sourceTree = "<group>";
@@ -451,6 +457,8 @@
 			files = (
 				D23CD8591E80F6E6001A5449 /* WeatherVC.swift in Sources */,
 				D23CD8571E80F6E6001A5449 /* AppDelegate.swift in Sources */,
+				D23CD8871E814CD2001A5449 /* CurrentWeather.swift in Sources */,
+				D23CD8851E81434B001A5449 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
