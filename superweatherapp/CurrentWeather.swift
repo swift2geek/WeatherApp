@@ -10,10 +10,10 @@ import UIKit
 import Alamofire
 
 class CurrentWeather {
-    private var _cityName: String!
-    private var _date: String!
-    private var _weatherType: String!
-    private var _currentTemp: Double!
+    var _cityName: String!
+    var _date: String!
+    var _weatherType: String!
+    var _currentTemp: Double!
     
     var cityName: String {
         if _cityName == nil {
@@ -51,7 +51,7 @@ class CurrentWeather {
     }
     
     func downloadWeatherDetails(completed: DownloadComplete) {
-        //Alamofire download
+        // Download Current Weather Data
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
         Alamofire.request(currentWeatherURL, method: .get).responseJSON { response in
             let result = response.result
@@ -60,9 +60,27 @@ class CurrentWeather {
                 
                 if let name = dict["name"] as? String {
                     self._cityName = name.capitalized
+                    print(self._cityName)
                 }
                 
                 if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {
+                    
+                    if let main = weather[0]["main"] as? String {
+                        self._weatherType = main.capitalized
+                        print(self._weatherType)
+                    }
+                    
+                }
+              
+                if let main = dict["main"] as? Dictionary<String, AnyObject> {
+                    
+                    if let currentTemperature = main["temp"] as? Double {
+                        
+                        let kelvinToCelsius = Double(round(currentTemperature - 273.15))
+                        
+                        self._currentTemp = kelvinToCelsius
+                        print(self._currentTemp)
+                    }
                     
                 }
                 
