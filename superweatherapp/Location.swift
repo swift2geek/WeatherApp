@@ -11,8 +11,10 @@ import Foundation
  
  class Location {
     
-    static var sharedInstance = Location()
-    private init() {}
+    private static let _sharedInstance = Location()
+    static var sharedInstance: Location {
+        return _sharedInstance
+    }
     
     var latitude: Double!
     var longitude: Double!

@@ -622,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A6C0C72B06601EA566C16DB /* Pods-superweatherapp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9F99Z2TAVG;
 				INFOPLIST_FILE = superweatherapp/Info.plist;
@@ -637,6 +638,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9332D98B5207E843D475EF68 /* Pods-superweatherapp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9F99Z2TAVG;
 				INFOPLIST_FILE = superweatherapp/Info.plist;
